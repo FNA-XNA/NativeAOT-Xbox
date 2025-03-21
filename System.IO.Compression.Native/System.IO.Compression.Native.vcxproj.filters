@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upstream">
+      <UniqueIdentifier>{98e4d3fc-1dc2-4952-90f1-4108d682a5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\brotli">
+      <UniqueIdentifier>{acebe15a-248a-4f7d-9fd2-51eac41f8e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\zlib">
+      <UniqueIdentifier>{a818e7a6-4aa6-431a-af8b-c6cebebfc0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\brotli\common">
+      <UniqueIdentifier>{d51f1faf-deb0-4c34-b5ae-c071a9f3c3ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\brotli\dec">
+      <UniqueIdentifier>{7e110254-7a3a-4f11-8e1f-61f219a99b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\brotli\enc">
+      <UniqueIdentifier>{d99189ad-7ddb-4df7-974e-f78c8f852885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\runtime\src\native\libs\System.IO.Compression.Native\pal_zlib.c">
+      <Filter>Source Files\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\adler32.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\compress.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\crc32.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\deflate.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\gzclose.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\gzlib.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\gzread.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\gzwrite.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\infback.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\inffast.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\inflate.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\inftrees.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\trees.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\uncompr.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\zlib\zutil.c">
+      <Filter>Source Files\upstream\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\dec\bit_reader.c">
+      <Filter>Source Files\upstream\brotli\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\dec\decode.c">
+      <Filter>Source Files\upstream\brotli\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\dec\huffman.c">
+      <Filter>Source Files\upstream\brotli\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\dec\state.c">
+      <Filter>Source Files\upstream\brotli\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\backward_references.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\backward_references_hq.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\bit_cost.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\block_splitter.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\brotli_bit_stream.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\cluster.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\command.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\compress_fragment.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\compress_fragment_two_pass.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\dictionary_hash.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\encode.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\encoder_dict.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\entropy_encode.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\fast_log.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\histogram.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\literal_cost.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\memory.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\metablock.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\static_dict.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\enc\utf8_util.c">
+      <Filter>Source Files\upstream\brotli\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\common\constants.c">
+      <Filter>Source Files\upstream\brotli\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\common\context.c">
+      <Filter>Source Files\upstream\brotli\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\common\dictionary.c">
+      <Filter>Source Files\upstream\brotli\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\common\platform.c">
+      <Filter>Source Files\upstream\brotli\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\external\brotli\common\transform.c">
+      <Filter>Source Files\upstream\brotli\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

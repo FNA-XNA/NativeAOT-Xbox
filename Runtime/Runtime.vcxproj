@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Gaming.Xbox.Scarlett.x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Gaming.Xbox.Scarlett.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Gaming.Xbox.Scarlett.x64">
+      <Configuration>Profile</Configuration>
+      <Platform>Gaming.Xbox.Scarlett.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Gaming.Xbox.Scarlett.x64">
+      <Configuration>Release</Configuration>
+      <Platform>Gaming.Xbox.Scarlett.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Gaming.Xbox.XboxOne.x64">
+      <Configuration>Release</Configuration>
+      <Platform>Gaming.Xbox.XboxOne.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Gaming.Xbox.XboxOne.x64">
+      <Configuration>Profile</Configuration>
+      <Platform>Gaming.Xbox.XboxOne.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Gaming.Xbox.XboxOne.x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Gaming.Xbox.XboxOne.x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gccommon.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcconfig.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gceewks.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gceventstatus.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gchandletable.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcload.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcscan.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcwks.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletable.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablecache.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablecore.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablescan.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\objecthandle.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\do_vxsort_avx2.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\do_vxsort_avx512.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\isa_detection.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\machine_traits.avx2.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\avx2_load_mask_tables.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX2.int32_t.generated.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX2.int64_t.generated.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX512.int32_t.generated.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX512.int64_t.generated.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\allocheap.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\AsmOffsetsVerify.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\CachedInterfaceDispatch.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\Crst.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\DebugHeader.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\EHHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\event.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\FinalizerHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcheaputilities.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GCHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GCMemoryHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcrhenv.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcrhscan.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GcStressControl.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gctoclreventsink.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\HandleTableHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MathHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MethodTable.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MiscHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\ObjectLayout.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\portable.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\profheapwalkhelper.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RestrictedCallouts.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\rhassert.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RhConfig.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RuntimeInstance.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\StackFrameIterator.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\startup.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\stressLog.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\SyncClean.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\thread.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\threadstore.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\ThunksMapping.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\TypeManager.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\UniversalTransitionHelpers.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\windows\CoffNativeCodeManager.cpp" />
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\yieldprocessornormalized.cpp" />
+    <ClCompile Include="..\..\runtime\src\native\minipal\cpufeatures.c" />
+    <ClCompile Include="eventsource_hack_gdkx.cpp" />
+    <ClCompile Include="gcenv.gdkx.cpp" />
+    <ClCompile Include="PalRedhawkCommonGDKX.cpp" />
+    <ClCompile Include="PalRedhawkMinWinGDKX.cpp" />
+    <ClCompile Include="StubsGDKX.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AsmOffsets.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\AllocFast.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\ExceptionHandling.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\GcProbe.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\Interlocked.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\InteropThunksHelpers.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\MiscStubs.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\PInvoke.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\StubDispatch.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\UniversalTransition.asm" />
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\WriteBarriers.asm" />
+    <MASM Include="ThunkPoolThunks.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Globalization.Native\System.Globalization.Native.vcxproj">
+      <Project>{5f0ee237-94a7-488c-8823-8c4457472db0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>Runtime</RootNamespace>
+    <ProjectGuid>{c7f6165a-c0d5-4ea7-bbae-2ff3d8b87c59}</ProjectGuid>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <Keyword>Win32Proj</Keyword>
+    <!-- - - - -->
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <TargetRuntime>Native</TargetRuntime>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.XboxOne.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.Scarlett.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.XboxOne.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.Scarlett.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.XboxOne.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.Scarlett.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <EmbedManifest>false</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' != '10.0'">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.XboxOne.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.Scarlett.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.XboxOne.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.Scarlett.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.XboxOne.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.Scarlett.x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.XboxOne.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.Scarlett.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.XboxOne.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.Scarlett.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.XboxOne.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.Scarlett.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IncludePath>$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)bin;$(Console_SdkToolPath);$(ExecutablePath)</ExecutablePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.XboxOne.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Xbox.Scarlett.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.XboxOne.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;NDEBUG;_LIB;PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Xbox.Scarlett.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;NDEBUG;_LIB;PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.XboxOne.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ClCompile>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Xbox.Scarlett.x64'">
+    <Link>
+      <AdditionalDependencies>$(Console_Libs);%(XboxExtensionsDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ClCompile>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>HOST_64BIT;TARGET_64BIT;HOST_AMD64;TARGET_AMD64;HOST_WINDOWS;TARGET_WINDOWS;FEATURE_BASICFREEZE;FEATURE_CONSERVATIVE_GC;FEATURE_CUSTOM_IMPORTS;FEATURE_NATIVEAOT;VERIFY_HEAP;NATIVEAOT;FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_FIXED_POOL_THUNKS;_LIB;NO_UI_ASSERT;WIN32;FEATURE_GC_STRESS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\amd64;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\inc;$(ProjectDir)..\..\runtime\src\coreclr\nativeaot\Runtime\windows;$(ProjectDir)..\..\runtime\src\coreclr\gc;$(ProjectDir)..\..\runtime\src\coreclr\gc\env;$(ProjectDir)..\..\runtime\src\native;$(ProjectDir)..\..\runtime\eng\native\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4458;4100;4200;4459;4127;4201</DisableSpecificWarnings>
+    </ClCompile>
+    <MASM>
+      <PreprocessorDefinitions>FEATURE_CACHED_INTERFACE_DISPATCH;FEATURE_DYNAMIC_CODE;FEATURE_GC_STRESS</PreprocessorDefinitions>
+    </MASM>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

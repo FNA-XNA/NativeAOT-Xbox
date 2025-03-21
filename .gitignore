@@ -1,0 +1,10 @@
+.vs/
+Debug/
+Gaming.Xbox*
+Release/
+*/obj/
+*/bin/
+*.vcxproj.user
+*.csproj.user
+aot-output/compiled-il*
+*.log

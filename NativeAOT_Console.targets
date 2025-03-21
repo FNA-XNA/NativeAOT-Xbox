@@ -1,0 +1,57 @@
+<Project>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="runtime.win-x64.Microsoft.DotNet.ILCompiler" Version="8.0.1" GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IlcArg Include="@(DirectPInvoke->'--directpinvoke:%(Identity)')" />
+    <IlcArg Include="@(IlcSatelliteAssembly->'--satellite:%(Identity)')" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="Build">
+    <Message Text="Building for Xbox..." Importance="high" />
+    <WriteLinesToFile File="$(SolutionDir)aot-output\NativeAOT.ilc.rsp" Lines="@(IlcArg)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <Exec Command="
+    if $(ConfigurationName)==Release (
+      set ILSuffix=Release
+    ) else (
+      set IlcFlags=-g
+      set ILSuffix=Debug
+    )
+    &quot;$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler)\tools\ilc.exe&quot; ^
+      &quot;$(TargetPath)&quot; ^
+      --targetos:windows ^
+      --targetarch:x64 ^
+      -O ^
+      --dehydrate ^
+      --generateunmanagedentrypoints:System.Private.CoreLib ^
+      -r:&quot;$(TargetDir)FNA.dll&quot; ^
+      --initassembly:System.Private.CoreLib ^
+      --initassembly:System.Private.StackTraceMetadata ^
+      --initassembly:System.Private.TypeLoader ^
+      --initassembly:System.Private.Reflection.Execution ^
+      --directpinvokelist:&quot;$(SolutionDir)WindowsAPIs-GDKX.txt&quot; ^
+      --directpinvoke:System.Globalization.Native ^
+      --directpinvoke:System.IO.Compression.Native ^
+      --directpinvoke:Bootstrap ^
+      --stacktracedata ^
+      --scanreflection ^
+      --nowarn:&quot;1701;1702;1701;1702;IL2026;IL2041;IL2042;IL2043;IL2056;IL2045;IL2046;IL2050;IL2032;IL2055;IL2057;IL2058;IL2059;IL2060;IL2061;IL2096;IL2062;IL2063;IL2064;IL2065;IL2066;IL2067;IL2068;IL2069;IL2070;IL2071;IL2072;IL2073;IL2074;IL2075;IL2076;IL2077;IL2078;IL2079;IL2080;IL2081;IL2082;IL2083;IL2084;IL2085;IL2086;IL2087;IL2088;IL2089;IL2090;IL2091;IL2092;IL2093;IL2094;IL2095;IL2097;IL2098;IL2099;IL2008;IL2009;IL2037&quot; ^
+      --singlewarn ^
+      --feature:System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization=false ^
+      --feature:System.Diagnostics.Tracing.EventSource.IsSupported=false ^
+      --feature:System.Resources.ResourceManager.AllowCustomResourceTypes=false ^
+      --feature:System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported=false ^
+      --rdxml:&quot;@(RdXmlFile)&quot; ^
+      -o:&quot;$(TargetDir)compiled-il-%ILSuffix%.obj&quot; ^
+      -r:&quot;$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler)\framework\*.dll&quot; ^
+      -r:&quot;$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler)\sdk\*.dll&quot; ^
+      %IlcFlags% ^
+      @&quot;$(SolutionDir)aot-output\NativeAOT.ilc.rsp&quot;
+    move $(TargetDir)compiled-il-%ILSuffix%.obj $(SolutionDir)aot-output" />
+  </Target>
+</Project>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upstream">
+      <UniqueIdentifier>{40dd8f33-fd6f-4287-b3b4-d921df26d36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\gc">
+      <UniqueIdentifier>{21e333a9-9b2b-4676-93c0-cfb5bc681776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\runtime">
+      <UniqueIdentifier>{e66e2122-bc13-4e96-bc2a-c07f6893c6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\runtime\common">
+      <UniqueIdentifier>{9373ada4-cfb0-47be-9464-b06171f48c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\runtime\full">
+      <UniqueIdentifier>{8d0a4b9e-8918-4522-8929-16dfd8835b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\runtime\full\windows">
+      <UniqueIdentifier>{8c14e70f-ac4a-4f7a-8065-d238ff63e707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\gc\vxsort">
+      <UniqueIdentifier>{54145770-d370-4359-8d67-461a69cfef3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gdkx">
+      <UniqueIdentifier>{99a74ecf-f52e-45f2-a590-d1159eaf298e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\upstream\runtime\asm">
+      <UniqueIdentifier>{47eecfe7-8458-46dd-8410-4d91ea060229}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gccommon.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcconfig.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gceewks.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gceventstatus.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gchandletable.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcload.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcscan.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\gcwks.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletable.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablecache.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablecore.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\handletablescan.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\objecthandle.cpp">
+      <Filter>Source Files\upstream\gc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\allocheap.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\CachedInterfaceDispatch.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\Crst.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\DebugHeader.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\EHHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\event.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\FinalizerHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcheaputilities.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GCHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GCMemoryHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcrhenv.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gcrhscan.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\GcStressControl.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\gctoclreventsink.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\HandleTableHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MathHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MethodTable.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\MiscHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\ObjectLayout.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\portable.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\profheapwalkhelper.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RestrictedCallouts.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\rhassert.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RhConfig.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\RuntimeInstance.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\StackFrameIterator.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\startup.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\stressLog.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\SyncClean.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\thread.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\threadstore.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\TypeManager.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\UniversalTransitionHelpers.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\yieldprocessornormalized.cpp">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\AsmOffsetsVerify.cpp">
+      <Filter>Source Files\upstream\runtime\full</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\windows\CoffNativeCodeManager.cpp">
+      <Filter>Source Files\upstream\runtime\full\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\do_vxsort_avx2.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\do_vxsort_avx512.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\isa_detection.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\machine_traits.avx2.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\avx2_load_mask_tables.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX2.int32_t.generated.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX2.int64_t.generated.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX512.int32_t.generated.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\gc\vxsort\smallsort\bitonic_sort.AVX512.int64_t.generated.cpp">
+      <Filter>Source Files\upstream\gc\vxsort</Filter>
+    </ClCompile>
+    <ClCompile Include="PalRedhawkMinWinGDKX.cpp">
+      <Filter>Source Files\gdkx</Filter>
+    </ClCompile>
+    <ClCompile Include="PalRedhawkCommonGDKX.cpp">
+      <Filter>Source Files\gdkx</Filter>
+    </ClCompile>
+    <ClCompile Include="gcenv.gdkx.cpp">
+      <Filter>Source Files\gdkx</Filter>
+    </ClCompile>
+    <ClCompile Include="StubsGDKX.cpp">
+      <Filter>Source Files\gdkx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\coreclr\nativeaot\Runtime\ThunksMapping.cpp">
+      <Filter>Source Files\upstream\runtime\full</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\src\native\minipal\cpufeatures.c">
+      <Filter>Source Files\upstream\runtime\common</Filter>
+    </ClCompile>
+    <ClCompile Include="eventsource_hack_gdkx.cpp">
+      <Filter>Source Files\gdkx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AsmOffsets.inc">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\AllocFast.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\ExceptionHandling.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\GcProbe.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\Interlocked.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\InteropThunksHelpers.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\MiscStubs.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\PInvoke.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\StubDispatch.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\UniversalTransition.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="..\..\runtime\src\coreclr\nativeaot\Runtime\amd64\WriteBarriers.asm">
+      <Filter>Source Files\upstream\runtime\asm</Filter>
+    </MASM>
+    <MASM Include="ThunkPoolThunks.asm">
+      <Filter>Source Files\gdkx</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
