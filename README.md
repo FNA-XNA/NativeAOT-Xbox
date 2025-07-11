@@ -42,6 +42,10 @@ This does a number of things:
   * Generates path properties for the ILC package, so it can be used in the post-build step.
   * Adds a post-build step that automatically AOT-compiles your project for win-x64 and spits the output .o file into the solution's `aot-output` folder to be consumed by the Bootstrap project.
 5. Add your game assets folder to the `Bootstrap/Gaming.Xbox.{PLATFORM}.x64/Layout/Image/Loose` directory.
+6. List any referenced managed assemblies in the `NativeAOT_Console.targets` file alongside the FNA.dll reference, like so:
+```
+-r:&quot;$(TargetDir)MyCustomDll.dll&quot; ^
+```
 
 An example of all these steps is included in the sln automatically in the form of DemoGame. Feel free to explore the implementation and experiment with it, and then rip it out and replace it with your own game.
 
